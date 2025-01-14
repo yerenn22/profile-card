@@ -17,8 +17,10 @@ export const ProfileCard = () => {
         </picture>
 
         <div className="flex flex-col items-center gap-1">
-          <h3 className="text-xl font-medium text-neutral-900">Sarah Dole</h3>
-          <p className="text-sm text-neutral-600">
+          <h3 className="mt-[1px] text-xl font-medium text-neutral-900">
+            Sarah Dole
+          </h3>
+          <p className="mt-[-1px] text-sm text-neutral-600">
             Front End Engineer @ Microsoft
           </p>
         </div>
@@ -38,7 +40,7 @@ export const ProfileCard = () => {
           {SOCIALS.map((Icon, index) => (
             <div
               key={index}
-              className="flex h-9 w-9 items-center justify-center"
+              className="flex h-9 w-9 cursor-pointer items-center justify-center"
             >
               <Icon className="text-indigo-700" />
             </div>
