@@ -2,7 +2,7 @@ import ProfileImg from "./assets/profile.webp";
 
 import { GithubIcon, InstagramIcon, LinkedinIcon, XIcon } from "./icons";
 
-const SOCIALS = [GithubIcon, InstagramIcon, LinkedinIcon, XIcon];
+const SOCIALS = [GithubIcon, LinkedinIcon, InstagramIcon, XIcon];
 
 export const ProfileCard = () => {
   return (
@@ -12,12 +12,12 @@ export const ProfileCard = () => {
           <img
             className="h-16 w-16"
             src={ProfileImg}
-            alt="Photo of Sarah Doe"
+            alt="Photo of Sarah Dole"
           />
         </picture>
 
         <div className="flex flex-col items-center gap-1">
-          <h3 className="text-xl font-medium text-neutral-900">Sarah Doe</h3>
+          <h3 className="text-xl font-medium text-neutral-900">Sarah Dole</h3>
           <p className="text-sm text-neutral-600">
             Front End Engineer @ Microsoft
           </p>
@@ -36,8 +36,11 @@ export const ProfileCard = () => {
 
         <div className="flex h-9 items-center justify-center gap-4">
           {SOCIALS.map((Icon, index) => (
-            <div className="flex h-9 w-9 items-center justify-center">
-              <Icon key={index} className="text-indigo-700" />
+            <div
+              key={index}
+              className="flex h-9 w-9 items-center justify-center"
+            >
+              <Icon className="text-indigo-700" />
             </div>
           ))}
         </div>
